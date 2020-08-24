@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
 import { ProtectedComponent } from './components/pages/protected/protected.component';
+import { AuthorizeComponent } from './components/pages/authorize/authorize.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,11 @@ import { ProtectedComponent } from './components/pages/protected/protected.compo
     NavbarComponent,
     HomeComponent,
     PricingComponent,
-    ProtectedComponent
+    ProtectedComponent,
+    AuthorizeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
